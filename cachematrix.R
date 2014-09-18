@@ -1,4 +1,9 @@
 ####### function to cache the matrix and its inverse ##########
+### this function has 4 function 
+### set_matrix - to set matrix value
+### get_matirx - to get matrix value
+###setInversematrix - to set inverse matrix values to cache
+###getInversematrix - to get inverse matrix values from cache
 makeCacheMatrix <- function(x = matrix()) 
 	{
 	###Set my_invers_matrix to NULL. This is output variable.
@@ -30,6 +35,9 @@ makeCacheMatrix <- function(x = matrix())
 	}
 
 #############function to get inverse of a matrix#############
+### this function returns inverse of a matrix.
+### if inverse is already calculated function gets the value from cache
+### if inverse is not calculated it uses solve function to get the inverse
 cacheSolve <- function(x, ...) 
 {
 	###get inverse of function calculated earlier(if not null)
